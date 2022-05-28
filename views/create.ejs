@@ -29,14 +29,7 @@
             as
             soon as possible!</p>
           <div class="my-5">
-            <!-- * * * * * * * * * * * * * * *-->
-            <!-- * * SB Forms Contact Form * *-->
-            <!-- * * * * * * * * * * * * * * *-->
-            <!-- This form is pre-integrated with SB Forms.-->
-            <!-- To make this form functional, sign up at-->
-            <!-- https://startbootstrap.com/solution/contact-forms-->
-            <!-- to get an API token!-->
-            <form id="contactForm" action="/posts/store" method="post">
+            <form id="contactForm" action="/posts/store" method="post" enctype="multipart/form-data">
               <div class="form-floating">
                 <input class="form-control" id="title" name="title" type="text" placeholder="Enter a title..." />
                 <label for="title">Title</label>
@@ -50,6 +43,10 @@
                 <!-- <div class="invalid-feedback" data-sb-feedback="message:required">A message is
 											required. -->
               </div>
+							<div class="input-group mb-3">
+								<input type="file" class="form-control" id="image" name="image">
+								<label class="input-group-text" for="image">Image</label>
+							</div>
           </div>
           <br />
           <!-- Submit success message-->
