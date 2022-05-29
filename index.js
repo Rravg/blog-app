@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const fileUpload = require('express-fileupload');
 const expressSession = require('express-session');
+const flash = require('connect-flash');
 
 /**
  * Controllers
@@ -37,6 +38,7 @@ global.loggedIn = null;
 
 const app = express();
 app.set('view engine', 'ejs');
+app.use(flash());
 app.use(express.static('public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
