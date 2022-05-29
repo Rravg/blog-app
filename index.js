@@ -13,12 +13,20 @@ mongoose.connect('mongodb://localhost:27017/my_database', {
 	.then(() => console.log("database conection succesfull"))
 	.catch(err => console.log(err));
 
+const validateMiddleWare = (req, res, next) => {
+	if (req.files == null || req.body.title == '' || req.body.body == '') {
+		return res.redirect('/posts/new');
+	}
+	next();
+}
+
 const app = express();
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(fileUpload());
+app.use('/posts/store', validateMiddleWare);
 
 app.listen(4000, () => {
 	console.log('app listening on port 4000');
