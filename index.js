@@ -13,6 +13,10 @@ const newPostController = require('./controllers/newPost');
 const homeController = require('./controllers/home');
 const getPostController = require('./controllers/getPost');
 const storePostController = require('./controllers/storePost');
+const newUserController = require('./controllers/newUser');
+const storeUserController = require('./controllers/storeUser');
+const loginController = require('./controllers/login');
+const loginUserController = require('./controllers/loginUser');
 
 /**
  * Middleware
@@ -39,7 +43,15 @@ app.get('/post/:id', getPostController);
 
 app.get('/posts/new', newPostController);
 
+app.get('/auth/register', newUserController);
+
+app.get('/auth/login', loginController);
+
 app.post('/posts/store', storePostController);
+
+app.post('/users/register', storeUserController);
+
+app.post('/users/login', loginUserController);
 
 app.listen(4000, () => {
 	console.log('app listening on port 4000');
