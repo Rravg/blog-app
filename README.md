@@ -1,6 +1,9 @@
 # FullStack - NodeJS, Express, MongoDB Blog Application
 
-This is a FullStack application that allows users to make posts, read posts, register a new account, login and logout, the main FrontEnd of this app was taken from a StartBootstrap template. 
+This is a FullStack application that allows users to make posts, read posts, register a new account, login and logout, the main FrontEnd of this app was taken from a StartBootstrap template.
+
+A deployed version of this app is provide hosted on Heroku and using MongoDB Atlas as the cloud based service for the database. 
+- Live Site URL: [Live Site URL](https://powerful-ocean-65211.herokuapp.com)
 
 ## Table of contents
 
