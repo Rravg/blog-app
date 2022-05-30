@@ -39,27 +39,37 @@
               </div>
               <div class="form-floating">
                 <textarea class="form-control" id="body" name="body" placeholder="Enter your message here..." style="height: 12rem"></textarea>
-                <label for="message">Description</label>
-                <!-- <div class="invalid-feedback" data-sb-feedback="message:required">A message is
-											required. -->
+                <!-- <label for="message">Description</label>
+                <div class="invalid-feedback" data-sb-feedback="message:required">A message is
+                  required.
+                </div> -->
+                <br />
+                <div class="input-group mb-3">
+                  <input type="file" class="form-control" id="image" name="image">
+                  <label class="input-group-text" for="image">Image</label>
+                </div>
               </div>
-							<div class="input-group mb-3">
-								<input type="file" class="form-control" id="image" name="image">
-								<label class="input-group-text" for="image">Image</label>
-							</div>
+              <br />
+              <!-- Submit Button-->
+              <button class="btn btn-primary text-uppercase" id="submitButton" type="submit">Send</button>
+            </form>
           </div>
-          <br />
-          <!-- Submit Button-->
-          <button class="btn btn-primary text-uppercase" id="submitButton" type="submit">Send</button>
-          </form>
         </div>
       </div>
-    </div>
     </div>
   </main>
   <!-- Footer-->
   <%- include('layouts/footer') -%>
   <%- include('layouts/scripts') -%>
+  <script>
+    $(document).ready(function() {
+      $('#body').summernote({
+        placeholder: 'Write your post',
+        tabsize: 2,
+        height: 200
+      });
+    });
+  </script>
 </body>
 
 </html>
