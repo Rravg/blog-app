@@ -28,6 +28,11 @@ const validateMiddleWare = require('./middleware/validationMiddleware');
 const authMiddleware = require('./middleware/authMiddleware');
 const redirectIfAuthMiddleWare = require('./middleware/redirectIfAuthMiddleWare');
 
+let port = process.env.PORT;
+if (port == null || port== '') {
+	port = 4000;
+}
+
 mongoose.connect('mongodb://localhost:27017/my_database', {
 	family: 4
 })
@@ -70,6 +75,6 @@ app.get('/auth/logout', logoutController);
 
 app.use((req, res) => {res.render('notfound')});
 
-app.listen(4000, () => {
-	console.log('app listening on port 4000');
+app.listen(port, () => {
+	console.log(`app listening on port ${port}`);
 })
