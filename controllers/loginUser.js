@@ -7,13 +7,19 @@ module.exports = (req, res) => {
         if (user) {
             bcrypt.compare(password, user.password, (err, same) => {
                 if (same) {
+                    const infoMessage = 'Login Successfull';
+                    req.flash('infoMessage', infoMessage);
                     req.session.userId = user._id;
                     res.redirect('/');
                 } else {
+                    const loginErrors = 'Incorrect Password';
+                    req.flash('loginErrors', loginErrors);
                     res.redirect('/auth/login');
                 }
             })
         } else {
+            const loginErrors = 'User not Found';
+            req.flash('loginErrors', loginErrors);
             res.redirect('/auth/login');
         }
     })

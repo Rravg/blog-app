@@ -23,6 +23,12 @@
   <div class="container px-4 px-lg-5">
     <div class="row gx-4 gx-lg-5 justify-content-center">
       <div class="col-md-10 col-lg-8 col-xl-7">
+        <% if (message != null && message.length > 0) { %>
+        <div class="alert alert-success fade show" role="alert">
+          <strong><%= message %> </strong>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <% } %>
         <!-- Post preview-->
         <% for (let i=0; i < blogposts.length; i++) { %>
         <div class="post-preview">
