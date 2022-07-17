@@ -2,8 +2,8 @@
 
 This is a FullStack application that allows users to make posts, read posts, register a new account, login and logout, the main FrontEnd of this app was taken from a StartBootstrap template.
 
-A deployed version of this app is provide hosted on Heroku and using MongoDB Atlas as the cloud based service for the database. 
-- Live Site URL: [Live Site URL](https://powerful-ocean-65211.herokuapp.com)
+A deployed version of this app is provided hosted on Heroku and using MongoDB Atlas as the cloud based service for the database. 
+- Live Site URL: [Live Site URL](https://rravg-clean-blog-app.herokuapp.com)
 
 ## Table of contents
 
@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Source Code Solution](https://github.com/Rravg/blog-app)
-- Live Site URL: [Live Site URL](https://powerful-ocean-65211.herokuapp.com)
+- Live Site URL: [Live Site URL](https://rravg-clean-blog-app.herokuapp.com)
 
 ## My process
 
