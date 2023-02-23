@@ -2,7 +2,7 @@
   "name": "startbootstrap-clean-blog",
   "version": "1.0.0",
   "engines": {
-    "node": "16.18.1"
+    "node": ">=16.x.x"
   },
   "main": "index.js",
   "scripts": {
@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "autoprefixer": "10.4.4",
-    "browser-sync": "^2.27.11",
+    "browser-sync": "^2.27.5",
     "chokidar": "3.5.3",
     "concurrently": "6.3.0",
     "nodemon": "^2.0.16",
