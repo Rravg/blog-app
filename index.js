@@ -36,7 +36,7 @@ if (port == null || port == "") {
 
 mongoose
   .connect(
-    `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.p6nmvrs.mongodb.net/${process.env.DB_NAME}`,
+    `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.p6nmvrs.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`,
     {
       family: 4,
     }
