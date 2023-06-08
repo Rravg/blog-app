@@ -3,7 +3,7 @@
 This is a FullStack application that allows users to make posts, read posts, register a new account, login and logout, the main FrontEnd of this app was taken from a StartBootstrap template.
 
 A deployed version of this app is provided hosted on Heroku and using MongoDB Atlas as the cloud based service for the database. 
-- Live Site URL: [Live Site URL](https://https://blog-app-ravg.up.railway.app)
+- Live Site URL: [Live Site URL](https://blog-app-ravg.up.railway.app)
 
 ## Table of contents
 
@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Source Code Solution](https://github.com/Rravg/blog-app)
-- Live Site URL: [Live Site URL](https://https://blog-app-ravg.up.railway.app)
+- Live Site URL: [Live Site URL](https://blog-app-ravg.up.railway.app)
 
 ## My process
 
