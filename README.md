@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Source Code Solution](https://github.com/Rravg/blog-app)
-- Live Site URL: [Live Site URL](https://rravg-clean-blog-app.herokuapp.com)
+- Live Site URL: [Live Site URL](https://https://blog-app-ravg.up.railway.app)
 
 ## My process
 
